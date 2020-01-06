@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                    xmlns:tools="http://schemas.android.com/tools"
+                                    android:layout_width="match_parent"
+                                    app:contentPaddingLeft="10dp"
+                                    app:contentPaddingRight="10dp"
+                                    app:contentPaddingTop="10dp"
+                                    app:cardUseCompatPadding="false"
+                                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                                    app:cardBackgroundColor="@android:color/transparent"
+                                    android:layout_height="wrap_content">
+
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rings_item_bg">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_margin="8dp"
+                android:gravity="start"
+                android:orientation="vertical">
+
+            <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginRight="60dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:textColor="@color/color_item_text"
+                    android:textSize="16sp"
+                    tools:text="从前有个小朋友很皮"/>
+
+            <TextView
+                    android:id="@+id/tvDesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@color/color_item_subtext"
+                    android:textSize="12sp"
+                    tools:text="真的皮"/>
+        </LinearLayout>
+
+        <ImageView
+                android:id="@+id/btnStartPlay"
+                android:layout_width="48dp"
+                android:adjustViewBounds="true"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center_vertical"
+                android:layout_marginRight="10dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/rings_btn_play_blue"/>
+
+        <LinearLayout
+                android:id="@+id/setLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:background="@drawable/rings_item_second_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+
+            <LinearLayout
+                    android:id="@+id/btnAction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"
+                    android:minWidth="48dp"
+                    android:orientation="vertical">
+
+                <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/rings_download"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:text="下载"
+                        android:textColor="@android:color/white"
+                        android:textSize="12sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:id="@+id/btnSet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"
+                    android:minWidth="48dp"
+                    android:orientation="vertical">
+
+                <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/rings_setting"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:text="设置"
+                        android:textColor="@android:color/white"
+                        android:textSize="12sp"/>
+            </LinearLayout>
+
+            <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                <ImageView
+                        android:id="@+id/btnPausePlay"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/rings_btn_play_white"/>
+
+                <ProgressBar
+                        android:id="@+id/loading"
+                        style="@android:style/Widget.ProgressBar"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center"
+                        android:indeterminate="false"
+                        android:indeterminateDrawable="@drawable/rings_loading_dr"
+                        android:visibility="gone"
+                        tools:visibility="visible"/>
+            </FrameLayout>
+        </LinearLayout>
+
+        <ProgressBar
+                android:id="@+id/playProgress"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_gravity="bottom"
+                android:progressDrawable="@drawable/color_progressbar"/>
+    </FrameLayout>
+</android.support.v7.widget.CardView>

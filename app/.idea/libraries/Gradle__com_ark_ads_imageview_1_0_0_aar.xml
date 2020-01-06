@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.ark.ads:imageview:1.0.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/70f3f226ab2aad657bf1cc46af111297/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/70f3f226ab2aad657bf1cc46af111297/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.ark.ads/imageview/1.0.0/10703ad34cd2c6b48adf75db6eeacc94f16d7fb1/imageview-1.0.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.ark.ads/imageview/1.0.0/6997c8e792a748a85eec79590145867dc72df5a9/imageview-1.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

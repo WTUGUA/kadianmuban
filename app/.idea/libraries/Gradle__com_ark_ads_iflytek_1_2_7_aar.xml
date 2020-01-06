@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.ark.ads:iflytek:1.2.7@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/07ef89f9ca590483c330745c273c3591/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/07ef89f9ca590483c330745c273c3591/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/07ef89f9ca590483c330745c273c3591/jars/libs/Ad_Android_SDK.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.ark.ads/iflytek/1.2.7/b572e75f698569371cda02ea46f28e663b181bfc/iflytek-1.2.7-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

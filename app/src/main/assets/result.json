@@ -1,0 +1,14 @@
+{
+	"msg": "",
+	"res": [{
+		"img": "http://cdn.video.dandanjiang.tv/custom_templates/5ca1e2e3e0be5e74900e4cfd.jpg?sign_old=1f5f861a424f89e7ee96dc6e4d17d797&sign=832de9b911607dd3d8e0796df48240cc&t=5ca2344d",
+		"zip": "http://cdn.video.dandanjiang.tv/custom_templates/5ca1e312e0be5e74900e4cfe.zip?sign_old=30153ded1bda5a6125c31621a73aa945&sign=9be66862c7da69f0301850767decd148&t=5ca2344d",
+		"need_vip": false,
+		"price": "0",
+		"free": false,
+		"free_time": null,
+		"_id": "5ca1e312e0be5e74900e4cfe",
+		"data": "{\n    \"text2image\": {\n        \"id\": \"image_0\",\n        \"text\": [\n            \"\u7b2c\u4e00\u884c\u6587\u5b57\",\n            \"\u7b2c\u4e8c\u884c\u6587\u5b57\",\n            \"\u7b2c\u4e09\u884c\u6587\u5b57\"\n        ],\n        \"width\": 255,\n        \"height\": 185\n    }\n}"
+	}],
+	"code": 0
+}

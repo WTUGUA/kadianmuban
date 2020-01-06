@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/splash_rl"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".ui.activity.SplashActivity"
+                android:background="@color/jujue">
+    <RelativeLayout
+        android:id="@+id/default_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_marginTop="12dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/logo"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="14dp"
+                android:text="@string/app_name"
+                android:textSize="16sp"
+                android:textColor="@color/ziti3"
+                >
+            </TextView>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <FrameLayout
+            android:id="@+id/splash_fr"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/default_img" />
+
+    <TextView
+            android:id="@+id/ad_platform"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="4dp"
+            android:background="@drawable/sdk_ad_tag_bg_green"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:visibility="gone"
+            tools:text="wskj"
+            tools:visibility="visible"/>
+</RelativeLayout>

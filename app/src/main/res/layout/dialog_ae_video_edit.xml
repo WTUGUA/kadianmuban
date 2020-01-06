@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.novv.dzdesk.ui.view.BottomFinishLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/root_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="@drawable/shape6">
+    <HorizontalScrollView
+            android:id="@+id/scrollView_image"
+            android:layout_width="match_parent"
+            android:layout_height="122dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/shape"
+            android:layout_above="@+id/scrollView_text"
+            android:fillViewport="true">
+        <LinearLayout
+                android:background="@drawable/shape"
+                android:id="@+id/ll_container_img"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center">
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <com.novv.dzdesk.ui.view.SmartScrollView
+            android:layout_marginTop="16dp"
+            android:id="@+id/scrollView_text"
+            android:fillViewport="true"
+            android:layout_above="@+id/ll_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+        <LinearLayout
+                android:id="@+id/ll_container_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"/>
+    </com.novv.dzdesk.ui.view.SmartScrollView>
+
+    <LinearLayout
+            android:id="@+id/ll_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp">
+        <TextView
+                android:id="@+id/btn_action"
+                android:background="@color/haoping"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="57dp"
+                android:paddingRight="57dp"
+                android:paddingTop="9dp"
+                android:paddingBottom="9dp"
+                android:textSize="16sp"
+                android:textColor="@android:color/white"
+                android:text="一键生成"/>
+    </LinearLayout>
+</com.novv.dzdesk.ui.view.BottomFinishLayout>

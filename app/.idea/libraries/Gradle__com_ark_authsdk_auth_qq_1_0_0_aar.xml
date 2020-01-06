@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.ark.authsdk:auth_qq:1.0.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c9c40f8aef13e5189dc3d4adf3f4d7dc/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c9c40f8aef13e5189dc3d4adf3f4d7dc/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c9c40f8aef13e5189dc3d4adf3f4d7dc/jars/libs/open_sdk_r5990_lite.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.ark.authsdk/auth_qq/1.0.0/b8766f7edb7c754b813b4eb83f69977f401c98dd/auth_qq-1.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

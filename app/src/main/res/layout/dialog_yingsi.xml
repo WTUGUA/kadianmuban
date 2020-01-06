@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="295dp"
+    android:layout_height="466dp"
+    android:background="@drawable/shape9"
+
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="169dp"
+        android:layout_height="116dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:src="@mipmap/popups_privacy">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/yingsi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:text="欢迎使“节奏模板视频”!我们非常重视您的个人信息和隐私保护。在您使用“卡点模板视频”服务之前，请仔细阅读并同意《隐私政策》"
+        android:textColor="@color/text">
+
+    </TextView>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:text="声明：在您使用“节奏模板视频”我们不会向服务器上传并保存您的信息"
+        android:textColor="@color/text">
+
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:text="如您同意此政策，请点击“同意”并开始使用我们的产品和服务，我们尽全力保护您的个人信息安全。"
+        android:textColor="@color/text16">
+
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="25dp">
+
+        <Button
+            android:id="@+id/unagree"
+            android:layout_width="125dp"
+            android:layout_height="44dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/shape8"
+            android:text="不同意">
+
+        </Button>
+
+        <Button
+            android:id="@+id/agree"
+            android:layout_width="125dp"
+            android:layout_height="44dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/shape10"
+            android:text="同意">
+
+        </Button>
+    </LinearLayout>
+
+
+</LinearLayout>

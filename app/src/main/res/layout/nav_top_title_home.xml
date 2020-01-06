@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.novv.dzdesk.ui.view.NavTabTitleHomeBar xmlns:android="http://schemas.android.com/apk/res/android"
+                                              android:id="@+id/nav_ll"
+                                              android:layout_width="wrap_content"
+                                              android:layout_height="30dp"
+                                              android:layout_centerInParent="true"
+                                              android:layout_gravity="center_horizontal"
+                                              android:orientation="horizontal">
+
+    <RelativeLayout
+            android:id="@+id/nav_first_rl"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+        <TextView
+                android:id="@+id/nav_first_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:gravity="center"
+                android:text="@string/nav_recommend_title"
+                android:textColor="@color/nav_text_color_multip"
+                android:textSize="16sp"/>
+
+        <View
+                android:layout_width="30dp"
+                android:layout_height="2dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/selector_nav_top_selected_bg"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/nav_second_rl"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+        <TextView
+                android:id="@+id/nav_second_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:gravity="center"
+                android:text="@string/nav_new_title"
+                android:textColor="@color/nav_text_color_multip"
+                android:textSize="16sp"/>
+
+        <View
+                android:layout_width="30dp"
+                android:layout_height="2dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/selector_nav_top_selected_bg"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/nav_third_rl"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+        <TextView
+                android:id="@+id/nav_third_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:gravity="center"
+                android:text="@string/nav_category_title"
+                android:textColor="@color/nav_text_color_multip"
+                android:textSize="16sp"/>
+
+        <View
+                android:layout_width="30dp"
+                android:layout_height="2dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/selector_nav_top_selected_bg"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/nav_forth_rl"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+        <TextView
+                android:id="@+id/nav_forth_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:gravity="center"
+                android:text="@string/nav_model_title"
+                android:textColor="@color/nav_text_color_multip"
+                android:textSize="16sp"/>
+
+        <View
+                android:id="@+id/view_line"
+                android:layout_width="30dp"
+                android:layout_height="2dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/selector_nav_top_selected_bg"/>
+
+        <ImageView
+                android:layout_marginLeft="5dp"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/view_line"
+                android:src="@mipmap/ic_diy_hot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+</com.novv.dzdesk.ui.view.NavTabTitleHomeBar>

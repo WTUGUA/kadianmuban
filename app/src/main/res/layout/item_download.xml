@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/rl_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+    <com.xslczx.widget.RatioImageView
+            android:id="@+id/cover_imgv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            app:riv_height_to_width_ratio="1.5"
+            tools:src="@drawable/lw_thumb"/>
+    <CheckBox
+            style="@style/DownloadCheckBoxTheme"
+            android:id="@+id/checkbox"
+            android:layout_margin="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:clickable="false"/>
+</RelativeLayout>

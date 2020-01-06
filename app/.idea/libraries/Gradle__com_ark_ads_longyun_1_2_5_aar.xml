@@ -1,0 +1,20 @@
+<component name="libraryTable">
+  <library name="Gradle: com.ark.ads:longyun:1.2.5@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5578dac9685c77165533527d2fc0dc59/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5578dac9685c77165533527d2fc0dc59/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5578dac9685c77165533527d2fc0dc59/jars/libs/Baidu_mobads_sdk_ly_V2.0.7.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5578dac9685c77165533527d2fc0dc59/jars/libs/Gdt_mobads_sdk_ly_V2.0.5.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5578dac9685c77165533527d2fc0dc59/jars/libs/LongYun_juhe_sdk_V2.0.4.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5578dac9685c77165533527d2fc0dc59/jars/libs/longyun_mobads_sdk_ly_V2.0.7.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5578dac9685c77165533527d2fc0dc59/jars/libs/qh_mobads_sdk_ly_V2.0.0.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5578dac9685c77165533527d2fc0dc59/jars/libs/sougou_mobads_sdk_ly_V1.0.2.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.ark.ads/longyun/1.2.5/18b0b5b600822a1014e03aadfa49badfbcaff148/longyun-1.2.5-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.ark.ads/longyun/1.2.5/7c633d7eacd50308112ea14fc4123b4c1169f5bb/longyun-1.2.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

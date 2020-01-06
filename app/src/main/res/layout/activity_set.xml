@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/activity_set"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <FrameLayout
+            android:id="@+id/fl_top"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/color_primary">
+
+        <ImageView
+                android:id="@+id/btn_back"
+                android:layout_width="32dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:padding="4dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/back"/>
+
+        <TextView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textColor="?android:textColorPrimary"
+                android:text="@string/set_title"/>
+    </FrameLayout>
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?widgetBackground">
+
+        <LinearLayout
+                android:id="@+id/set_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <LinearLayout
+                    android:id="@+id/set_user_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        android:gravity="center|start"
+                        android:background="?selectableItemBackground"
+                        android:textSize="16sp"
+                        android:textColor="?android:attr/textColorPrimary"
+                        android:text="@string/set_userinfo"/>
+
+                <View style="@style/AppWidget.DeepLine"/>
+            </LinearLayout>
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="53dp">
+
+                <TextView
+                        android:id="@+id/video_volume_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:paddingLeft="16dp"
+                        android:gravity="center|start"
+                        android:background="?selectableItemBackground"
+                        android:textSize="16sp"
+                        android:textColor="?android:attr/textColorPrimary"
+                        android:text="@string/set_volume"/>
+
+                <TextView
+                        android:id="@+id/video_volume_count_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@id/video_volume_tv"
+                        android:gravity="center|start"
+                        android:background="?selectableItemBackground"
+                        android:textSize="14sp"
+                        android:textColor="?android:attr/textColorPrimary"
+                        android:text="50"/>
+
+                <SeekBar
+                        android:id="@+id/video_volume_seekbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/video_volume_count_tv"
+                        android:layout_centerVertical="true"
+                        android:minHeight="2dp"
+                        android:maxHeight="2dp"
+                        android:max="100"
+                        android:progress="50"
+                        android:progressDrawable="@drawable/volume_seekbar_bg"
+                        android:thumb="@drawable/volume_seekbar_thumb"/>
+
+            </RelativeLayout>
+
+            <View style="@style/AppWidget.DeepLine"/>
+
+            <TextView
+                    android:id="@+id/set_fail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:gravity="center|start"
+                    android:background="?selectableItemBackground"
+                    android:textSize="16sp"
+                    android:textColor="?android:attr/textColorPrimary"
+                    android:text="@string/set_fail_help_title"/>
+
+            <View style="@style/AppWidget.DeepLine"/>
+
+            <TextView
+                    android:id="@+id/set_cache"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:gravity="center|start"
+                    android:background="?selectableItemBackground"
+                    android:textSize="16sp"
+                    android:textColor="?android:attr/textColorPrimary"
+                    android:text="@string/set_cache_title"/>
+
+            <View style="@style/AppWidget.DeepLine"/>
+
+            <TextView
+                    android:id="@+id/set_feedback"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:gravity="center|start"
+                    android:background="?selectableItemBackground"
+                    android:textSize="16sp"
+                    android:textColor="?android:attr/textColorPrimary"
+                    android:text="@string/set_feedback_title"/>
+
+            <View style="@style/AppWidget.DeepLine"/>
+
+            <TextView
+                    android:id="@+id/set_cooperation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:gravity="center|start"
+                    android:background="?selectableItemBackground"
+                    android:textSize="16sp"
+                    android:textColor="?android:attr/textColorPrimary"
+                    android:text="@string/set_cooperation"/>
+
+            <View style="@style/AppWidget.DeepLine"/>
+
+            <TextView
+                    android:id="@+id/set_user_protocol"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:gravity="center|start"
+                    android:background="?selectableItemBackground"
+                    android:textSize="16sp"
+                    android:textColor="?android:attr/textColorPrimary"
+                    android:text="用户协议"/>
+
+            <View style="@style/AppWidget.DeepLine"/>
+
+<!--            <TextView-->
+<!--                    android:id="@+id/list_plugin"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:padding="16dp"-->
+<!--                    android:gravity="center|start"-->
+<!--                    android:background="?selectableItemBackground"-->
+<!--                    android:textSize="16sp"-->
+<!--                    android:textColor="?android:attr/textColorPrimary"-->
+<!--                    android:text="播放列表"/>-->
+
+<!--            <View style="@style/AppWidget.DeepLine"/>-->
+
+            <TextView
+                    android:id="@+id/set_plugin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:visibility="gone"
+                    android:gravity="center|start"
+                    android:background="?selectableItemBackground"
+                    android:textSize="16sp"
+                    android:textColor="?android:attr/textColorPrimary"
+                    android:text="壁纸组件(必须)"/>
+
+<!--            <View style="@style/AppWidget.DeepLine"/>-->
+
+            <TextView
+                    android:id="@+id/set_about"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:gravity="center|start"
+                    android:background="?selectableItemBackground"
+                    android:textSize="16sp"
+                    android:textColor="?android:attr/textColorPrimary"
+                    android:text="@string/set_about_title"/>
+
+            <LinearLayout
+                    android:id="@+id/set_logout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                <View style="@style/AppWidget.DeepLine"/>
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        android:gravity="center|start"
+                        android:background="?selectableItemBackground"
+                        android:textSize="16sp"
+                        android:textColor="?android:attr/textColorPrimary"
+                        android:text="@string/set_logout"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

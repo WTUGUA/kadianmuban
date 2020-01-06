@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.ark.authsdk:auth:1.0.0@aar">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f0ce9b3456397cb06d83ac4cabb59841/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f0ce9b3456397cb06d83ac4cabb59841/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f0ce9b3456397cb06d83ac4cabb59841/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.ark.authsdk/auth/1.0.0/1cad78c08e4fe8a3146c69c5ded26ba87fd29f68/auth-1.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

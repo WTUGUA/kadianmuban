@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="?widgetBackground"
+              android:orientation="vertical">
+
+    <View
+            android:id="@+id/icon_shadow_gap"
+            style="@style/AppWidget.ShadowGap"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+        <com.xslczx.widget.ShapeImageView
+                android:id="@+id/img_avatar"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                tools:src="@drawable/user_avatar_default_small"
+                app:siv_round_radius="4dp"
+                app:siv_shape="rect"
+                tools:ignore="ContentDescription"/>
+
+        <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                <TextView
+                        android:id="@+id/tv_comment_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="?colorAccent"
+                        android:textSize="14sp"
+                        tools:text="@string/app_name"/>
+
+                <CheckedTextView
+                        android:id="@+id/icon_sex"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginStart="8dp"
+                        android:background="?attr/referenceBackground"
+                        android:checked="true"
+                        android:maxLines="1"
+                        android:paddingLeft="4dp"
+                        android:paddingRight="4dp"
+                        android:textColor="?attr/referenceText"
+                        android:textSize="12sp"
+                        android:visibility="gone"
+                        tools:text="男"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                <TextView
+                        android:id="@+id/tv_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLength="50"
+                        android:maxLines="4"
+                        android:textColor="?android:attr/textColorSecondary"
+                        android:textSize="12sp"
+                        tools:text="我曾经手机的骄傲将打破的近段时间我基地极大i 集伟大的季节随机送啊我pads哦数控多少普吉岛送拍都是哦哦陪我激动哦宽松的松"/>
+
+            </LinearLayout>
+
+            <com.novv.dzdesk.ui.view.CommentListTextView
+                    android:id="@+id/tv_reply"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="?widgetBackgroundDark"
+                    android:padding="5dp"
+                    android:textColor="?android:attr/textColorSecondary"
+                    android:textSize="10sp"
+                    android:visibility="gone"
+                    tools:text="消失了才珍惜：我就不想回复你"/>
+        </LinearLayout>
+
+        <RelativeLayout
+                android:id="@+id/rl_praise"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="32dp"
+                android:minWidth="32dp">
+
+            <TextView
+                    android:id="@+id/btn_praise"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:drawablePadding="8dp"
+                    android:gravity="center"
+                    android:textColor="?android:attr/textColorSecondary"
+                    android:textSize="12sp"
+                    tools:text="12"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

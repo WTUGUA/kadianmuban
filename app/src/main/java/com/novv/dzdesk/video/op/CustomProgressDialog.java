@@ -1,0 +1,29 @@
+package com.novv.dzdesk.video.op;
+
+import android.app.ProgressDialog;
+import android.content.Context;
+import com.novv.dzdesk.R;
+
+public class CustomProgressDialog extends ProgressDialog {
+
+    public CustomProgressDialog(Context context) {
+        super(context, R.style.AppDialogLightWhite);
+        setMessage("处理中...");
+        setMax(100);
+        setProgressStyle(ProgressDialog.STYLE_HORIZONTAL);
+        setCanceledOnTouchOutside(false);
+        setCancelable(true);
+    }
+
+    @Override
+    public void dismiss() {
+        super.dismiss();
+        setProgress(0);
+    }
+
+    @Override
+    public void cancel() {
+        super.cancel();
+        setProgress(0);
+    }
+}

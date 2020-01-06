@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:gravity="center"
+              android:paddingTop="5dp"
+              android:paddingBottom="5dp"
+              android:layout_height="wrap_content">
+
+    <EditText
+            tools:background="#1e1e1e"
+            android:id="@+id/edit_input"
+            android:textColor="#787878"
+            tools:text="我是第一行文字（可替换）"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"/>
+</LinearLayout>

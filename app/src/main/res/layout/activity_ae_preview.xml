@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.ae.AEPreviewActivity">
+
+    <ImageView
+        android:id="@+id/bg_cover"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop" />
+
+    <RelativeLayout
+        android:id="@+id/ll_top"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+        <ImageView
+            android:id="@+id/back_view"
+            android:layout_width="32dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:adjustViewBounds="true"
+            android:padding="4dp"
+            android:src="@mipmap/btn_ae_back" />
+
+        <ImageView
+            android:id="@+id/iv_top_ad"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:adjustViewBounds="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="17dp"
+            android:src="@drawable/ic_launcher_logo" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_bottom"
+        android:layout_below="@+id/ll_top"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <com.novv.dzdesk.ui.view.player.TextureVideoView
+                android:id="@+id/vv_videoView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
+
+        <com.xslczx.widget.RatioImageView
+            android:id="@+id/ic_cover"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:scaleType="centerCrop"
+            app:riv_width_to_height_ratio="0.567"
+            tools:src="@drawable/lw_thumb" />
+
+        <ImageView
+            android:id="@+id/change_button"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/btn_play"
+            tools:ignore="ContentDescription" />
+
+        <ProgressBar
+            android:id="@+id/loading"
+            style="@android:style/Widget.ProgressBar"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_centerInParent="true"
+            android:indeterminate="false"
+            android:indeterminateDrawable="@drawable/dialog_loading"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+
+        <ImageView
+            android:id="@+id/iv_center_ad"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="220dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/ic_launcher_logo" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_preview_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:maxEms="10"
+            android:text="视频模板介绍，可替换里面的照片和文字，赶紧试试吧~"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bt_set_ring"
+                android:visibility="gone"
+                tools:visibility="visible"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="19dp"
+                android:background="@drawable/bg_btn_setring"
+                android:drawableStart="@mipmap/icon_btnring"
+                android:paddingStart="12dp"
+                android:paddingEnd="9dp"
+                android:layout_marginEnd="20dp"
+                android:text="设为彩铃"
+                android:textSize="12sp" />0
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="@dimen/dp20"
+            android:layout_marginTop="27dp"
+            android:layout_marginEnd="@dimen/dp20"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                />
+            <RelativeLayout
+                android:id="@+id/rl_try_free"
+                android:layout_width="wrap_content"
+                android:gravity="bottom"
+                android:visibility="gone"
+                tools:visibility="visible"
+                android:layout_height="50dp">
+                <TextView
+                    android:id="@+id/btn_try_free"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="@dimen/dp20"
+                    android:background="@drawable/bg_tryfree_selecotr"
+                    android:gravity="center"
+                    android:text="看广告试用"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp" />
+                <TextView
+                    android:id="@+id/tv_remain"
+                    android:background="@mipmap/icon_try_free_item"
+                    android:layout_width="60dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="-10dp"
+                    android:layout_marginStart="90dp"
+                    android:text="剩余0次"
+                    android:textColor="#FF775F"
+                    android:gravity="center"
+                    android:textSize="12sp"
+                    />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/btn_action"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:background="@drawable/shape7"
+                android:gravity="center"
+                android:layout_gravity="bottom"
+                android:text="开通VIP"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/vip_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="40dp"
+            android:text="开通VIP，免费使用全部定制模板"
+            android:textColor="#80ffffff" />
+    </LinearLayout>
+</RelativeLayout>

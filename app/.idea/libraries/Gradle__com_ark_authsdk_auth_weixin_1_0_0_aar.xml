@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.ark.authsdk:auth_weixin:1.0.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/110bab6962da5e50a8ea3d942c1a9143/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/110bab6962da5e50a8ea3d942c1a9143/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.ark.authsdk/auth_weixin/1.0.0/9a3e27a2820c8d5904f267f82a79a0c4f7ab1a23/auth_weixin-1.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

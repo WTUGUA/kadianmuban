@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:background="#FF343535"
+             android:gravity="center"
+             android:orientation="vertical">
+
+    <com.xslczx.widget.RatioImageView
+            android:id="@+id/video_picker_im_photo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="0.5dp"
+            android:contentDescription="@null"
+            android:scaleType="centerCrop"
+            app:riv_height_to_width_ratio="1.5"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="0.5dp"
+            android:drawableTop="@drawable/video_picker_camera"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:text="拍摄视频"
+            android:textColor="#FF999999"
+            android:textSize="14sp"/>
+</FrameLayout>

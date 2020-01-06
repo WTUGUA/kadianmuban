@@ -1,0 +1,64 @@
+buildscript {
+  repositories {
+    jcenter()
+    google()
+    maven { url 'https://maven.fabric.io/public' }
+    maven { url "https://maven.google.com" }
+    maven { url 'https://jitpack.io' }
+    maven {
+      url 'http://maven.aliyun.com/nexus/content/repositories/releases/'
+    }
+  }
+  dependencies {
+    classpath 'com.android.tools.build:gradle:3.4.1'
+    classpath 'io.fabric.tools:gradle:1.28.0'
+    classpath 'com.leon.channel:plugin:2.0.3'
+    classpath 'com.tencent.bugly:tinker-support:1.1.5'
+    classpath 'com.aliyun.ams:emas-services:1.0.1'
+  }
+}
+
+allprojects {
+  repositories {
+    maven {
+      url 'http://nexus.xiaoc.cn/repository/maven-releases/'
+      credentials {
+        username 'admin'
+        password 'pp11906145'
+      }
+    }
+    jcenter()
+    google()
+    maven { url "https://maven.google.com" }
+    maven { url 'https://jitpack.io' }
+    flatDir {
+      dirs 'libs'
+    }
+    maven { url 'https://dl.bintray.com/umsdk/release' }
+    maven { url "https://dl.bintray.com/thelasterstar/maven/" }
+    maven { url 'https://maven.fabric.io/public' }
+    maven { url 'https://oss.jfrog.org/libs-snapshot' }
+    maven { url 'https://dl.bintray.com/dengyuhan/maven' }
+    maven { url 'http://maven.aliyun.com/nexus/content/repositories/releases/' }
+    maven {
+      url 'http://maven.aliyun.com/nexus/content/repositories/releases/'
+    }
+  }
+}
+
+task clean(type: Delete) {
+  delete rootProject.buildDir
+}
+
+ext {
+  appVersionCode = 103
+  appVersionName = "1.0"
+  libMinSdkVersion = 21
+  appMinSdkVersion = 21
+  targetSdkVersion = 28
+  compileSdkVersion = 28
+  supportVersion = '28.0.0'
+
+  adsVersion = '1.2.5'
+}
+

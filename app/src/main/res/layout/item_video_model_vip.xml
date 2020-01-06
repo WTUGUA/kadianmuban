@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="117dp"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="10dp">
+
+    <com.xslczx.widget.RatioImageView
+        android:id="@+id/ic_cover"
+        android:background="@drawable/shape"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:riv_height_to_width_ratio="1.5" />
+
+    <ImageView
+        android:id="@+id/ic_mask"
+        android:background="@drawable/shape"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:src="@mipmap/ic_mask_vip" />
+</FrameLayout>

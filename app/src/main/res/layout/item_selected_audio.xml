@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/rootView"
+        tools:layout_width="140dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp">
+
+    <com.xslczx.widget.RatioImageView
+            android:id="@+id/channel_imageview"
+            android:layout_width="match_parent"
+            android:background="#20000000"
+            android:src="@drawable/default_image"
+            android:layout_height="wrap_content"
+            app:riv_height_to_width_ratio="1"
+            android:scaleType="centerCrop"/>
+
+    <ImageView
+            android:id="@+id/channel_delete"
+            android:layout_width="32dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|top"
+            android:layout_margin="4dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/icon_deleted"
+            android:visibility="gone"/>
+
+    <RelativeLayout
+            android:id="@+id/rl_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/shadow"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+        <ImageView
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                app:srcCompat="@drawable/ic_audio"/>
+
+        <TextView
+                android:id="@+id/video_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="0:00"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"/>
+    </RelativeLayout>
+</FrameLayout>

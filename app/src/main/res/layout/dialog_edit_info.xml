@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/dialog_spinner_bg"
+            android:gravity="center">
+
+        <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:maxLines="1"
+                android:text="@string/dialog_title"
+                android:textColor="?android:attr/textColorPrimary"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+        <TextView
+                android:id="@+id/tv_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_title"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="25dp"
+                android:text="为了啥啥啥，您一定要有个霸气的名字，求你了"
+                android:textColor="?android:textColorPrimary"
+                android:textSize="14sp"/>
+
+        <LinearLayout
+                android:id="@+id/ll_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_desc"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp">
+
+            <TextView
+                    android:id="@+id/input_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="昵称"
+                    android:textColor="?android:attr/textColorPrimary"
+                    android:textSize="@dimen/sp_14"/>
+
+            <EditText
+                    android:id="@+id/et_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/shape_et_input"
+                    android:hint="请输入昵称"
+                    android:inputType="text"
+                    android:maxLength="10"
+                    android:maxLines="1"
+                    android:padding="5dp"
+                    android:textColor="?android:attr/textColorPrimary"
+                    android:textColorHint="?android:attr/textColorSecondary"
+                    android:textSize="@dimen/sp_12"
+                    tools:ignore="RtlHardcoded"/>
+        </LinearLayout>
+
+        <ImageView
+                android:id="@+id/btn_close"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="1dp"
+                android:padding="10dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/share_close"/>
+
+        <!-- Line -->
+        <View
+                android:id="@+id/view_line"
+                style="@style/AppWidget.DeepLine"
+                android:layout_below="@+id/ll_input"
+                android:layout_marginTop="10dp"/>
+
+        <!-- 底部按钮 -->
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/view_line">
+
+            <TextView
+                    android:id="@+id/btn_sure"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:clickable="true"
+                    android:padding="8dp"
+                    android:text="@string/dialog_sure"
+                    android:textColor="@color/general_blue"
+                    android:textSize="16sp"
+                    android:textStyle="bold"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>
+

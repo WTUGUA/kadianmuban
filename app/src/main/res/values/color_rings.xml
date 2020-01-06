@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="myTransparent">#00000000</color>
+    <color name="simple_red">#fd4000</color>
+    <color name="main_bg">#f3f3f3</color>
+    <color name="WHITE">#ffffff</color>
+    <color name="BLACK">#000000</color>
+    <color name="gray_1">#7a7a7a</color>
+    <color name="red_side">#ff7445</color>
+
+    <!-- Search tag start -->
+    <color name="stag1">#316190</color>
+    <color name="stag2">#de604a</color>
+    <color name="stag3">#1ebbbb</color>
+    <color name="stag4">#ebad00</color>
+    <color name="stag5">#1e8796</color>
+    <color name="stag6">#d36b1e</color>
+    <color name="stag7">#28ae80</color>
+
+    <!-- Search tag start -->
+    <color name="black_overlay">#66000000</color>
+    <color name="windowBackground">#1B0F13</color>
+    <color name="color_item_sound_selected">#33ffd7</color>
+    <color name="color_item_sound_normal">#c6c2d3</color>
+    <color name="color_item_record_selected">#4d4d4d65</color>
+    <color name="color_item_record_normal">#00000000</color>
+    <color name="color_btn_blue">#ff05caee</color>
+    <color name="color_btn_p">#948bb9</color>
+    <color name="color_item">#474747</color>
+    <color name="color_item_text">#FCFCFC</color>
+    <color name="color_item_subtext">#80ffffff</color>
+</resources>

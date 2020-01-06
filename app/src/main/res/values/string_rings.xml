@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="format_ring_data">大小:%1$s&#160;&#160;|&#160;&#160;时间:%2$ds</string>
+</resources>

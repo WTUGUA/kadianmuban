@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <RelativeLayout
+            android:id="@+id/top_rl"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/color_primary">
+
+        <ImageView
+                android:id="@+id/btn_back"
+                android:layout_width="32dp"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:padding="4dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/back"/>
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textColor="?android:textColorPrimary"
+                android:text="@string/nav_local_title"/>
+
+        <FrameLayout
+                android:id="@+id/chose_local_video_rl"
+                android:layout_width="110dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical|end"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"
+                    android:textColor="@color/color_accent"
+                    android:text="@string/chose_local_title"/>
+
+        </FrameLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/content_layout_fl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/top_rl">
+
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout
+                android:id="@+id/refreshLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srlEnableLoadMoreWhenContentNotFull="true"
+                app:srlEnablePreviewInEditMode="true"
+                app:srlEnableScrollContentWhenLoaded="true"
+                app:srlFooterMaxDragRate="0.1">
+
+            <com.scwang.smartrefresh.layout.header.ClassicsHeader
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srlAccentColor="@color/white"
+                    app:srlDrawableArrowSize="14dp"
+                    app:srlEnableLastTime="false"
+                    app:srlPrimaryColor="@color/color_primary"
+                    app:srlTextSizeTitle="13sp"/>
+
+            <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    app:layoutManager="android.support.v7.widget.GridLayoutManager"
+                    app:spanCount="3"
+                    tools:listitem="@layout/resource_item_layout"/>
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+        <TextView
+                android:id="@+id/nothing_tv"
+                android:visibility="visible"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:textColor="?android:textColorPrimary"
+                android:text="@string/text_nothing_download"/>
+    </RelativeLayout>
+
+    <ImageView
+            android:id="@+id/iv_chose_local"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_above="@+id/tv_chose_local"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/video_sel_local"/>
+
+    <TextView
+            android:id="@+id/tv_chose_local"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="@dimen/dp10"
+            android:layout_marginBottom="@dimen/dp10"
+            android:shadowColor="@color/alpha_black_80"
+            android:shadowDx="1"
+            android:shadowDy="2"
+            android:shadowRadius="2"
+            android:textSize="11sp"
+            android:textColor="?android:textColorPrimary"
+            android:text="@string/sel_local_video"/>
+</RelativeLayout>

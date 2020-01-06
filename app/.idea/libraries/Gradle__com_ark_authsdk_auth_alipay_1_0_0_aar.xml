@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.ark.authsdk:auth_alipay:1.0.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/24caa43732026f91373819d3091a9c22/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/24caa43732026f91373819d3091a9c22/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.ark.authsdk/auth_alipay/1.0.0/b6830af963c4f07c3e0bf07407e79dab13a5fdce/auth_alipay-1.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

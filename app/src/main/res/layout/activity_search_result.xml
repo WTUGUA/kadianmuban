@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <RelativeLayout
+            android:id="@+id/search_top_rl"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="15dp">
+
+        <RelativeLayout
+                android:id="@+id/search_rl"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/result_search_tv"
+                android:background="@drawable/serch_bg">
+
+            <ImageView
+                    android:id="@+id/search_flag_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="0dp"
+                    android:src="@drawable/edit_icon_search"/>
+
+            <EditText
+                    android:id="@+id/search_input_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="0dp"
+                    android:layout_toRightOf="@+id/search_flag_iv"
+                    android:background="@color/transparent"
+                    android:hint="@string/search_input_hint"
+                    android:imeOptions="actionSearch"
+                    android:lines="1"
+                    android:singleLine="true"
+                    android:textColor="?android:textColorPrimary"
+                    android:textColorHint="?android:textColorSecondary"
+                    android:textSize="13sp"/>
+
+            <ImageView
+                    android:id="@+id/result_close_iv"
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingTop="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingBottom="5dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_close"/>
+        </RelativeLayout>
+
+        <TextView
+                android:id="@+id/result_search_tv"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="@string/search_btn_title"
+                android:textColor="?android:textColorPrimary"
+                android:textSize="16sp"/>
+    </RelativeLayout>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+            android:layout_below="@+id/search_top_rl"
+            android:id="@+id/refreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srlEnableLoadMoreWhenContentNotFull="true"
+            app:srlEnablePreviewInEditMode="true"
+            app:srlEnableScrollContentWhenLoaded="true"
+            app:srlFooterMaxDragRate="0.1">
+
+        <com.scwang.smartrefresh.layout.header.ClassicsHeader
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srlAccentColor="@color/white"
+                app:srlDrawableArrowSize="14dp"
+                app:srlEnableLastTime="false"
+                app:srlPrimaryColor="@color/color_primary"
+                app:srlTextSizeTitle="13sp"/>
+
+        <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                app:layoutManager="android.support.v7.widget.GridLayoutManager"
+                app:spanCount="3"
+                tools:listitem="@layout/resource_item_layout"/>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+</RelativeLayout>

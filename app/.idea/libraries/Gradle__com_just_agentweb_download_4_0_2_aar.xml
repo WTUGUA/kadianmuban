@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.just.agentweb:download:4.0.2@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e4416553fa2593db41f56be89e3564b1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e4416553fa2593db41f56be89e3564b1/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.just.agentweb/download/4.0.2/5a2d360776652d57b789db00fa61c1409619fa04/download-4.0.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.just.agentweb/download/4.0.2/8ea906a5eaf43b9d34c28e642c0dd0801ed66c49/download-4.0.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

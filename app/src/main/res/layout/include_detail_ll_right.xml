@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="60dp"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <ImageView
+            android:id="@+id/btn_diy"
+            android:src="@mipmap/btn_diy"
+            android:layout_width="55dp"
+            android:layout_height="55dp"/>
+
+    <RelativeLayout
+            android:layout_marginTop="15dp"
+            android:id="@+id/rl_avatar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+        <ImageView
+                android:id="@+id/iv_u_vip"
+                android:src="@mipmap/ic_vip_u_tag"
+                android:layout_width="22dp"
+                android:adjustViewBounds="true"
+                android:layout_height="wrap_content"/>
+
+        <com.xslczx.widget.ShapeImageView
+                android:id="@+id/iv_avatar"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                tools:src="@drawable/user_avatar_default"
+                app:siv_border_color="#E3BB73"
+                app:siv_border_size="2dp"
+                app:siv_shape="oval"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/rl_favorite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+        <ImageView
+                android:id="@+id/favorite_iv"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:adjustViewBounds="true"
+                android:src="@drawable/selector_favorite"/>
+
+        <TextView
+                android:id="@+id/favorite_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/favorite_iv"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:shadowColor="@color/black"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="12sp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/rl_comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+        <ImageView
+                android:id="@+id/comment_iv"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:adjustViewBounds="true"
+                android:src="@drawable/comment"/>
+
+        <TextView
+                android:id="@+id/comment_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/comment_iv"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:shadowColor="@color/black"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="12sp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/rl_share"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+        <ImageView
+                android:id="@+id/share_imgv"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_centerInParent="true"
+                android:adjustViewBounds="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/share"
+                tools:ignore="ContentDescription"/>
+    </RelativeLayout>
+</LinearLayout>

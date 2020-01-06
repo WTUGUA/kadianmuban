@@ -1,0 +1,18 @@
+<component name="libraryTable">
+  <library name="Gradle: com.ark.ads:core:1.2.7@aar">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/717cecccfd0b0c43b2d493dc9e8c8686/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/717cecccfd0b0c43b2d493dc9e8c8686/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/717cecccfd0b0c43b2d493dc9e8c8686/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/717cecccfd0b0c43b2d493dc9e8c8686/jars/libs/android-query-full.0.26.7.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.ark.ads/core/1.2.7/ed5be7453f09a10042bcd8bc48c5ced709b46a40/core-1.2.7-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.ark.ads/core/1.2.7/64c9fa08b55ef047a557cf47a2177d036fbe70e8/core-1.2.7-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+  <com.novv.dzdesk.ui.view.CustomerVideoView
+      android:id="@+id/videoPlayer"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      />
+
+  <ImageView
+      android:id="@+id/background_imgv"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:scaleType="centerCrop"
+      tools:ignore="ContentDescription"
+      />
+
+  <RelativeLayout
+      android:id="@+id/detail_top_rl"
+      android:layout_width="match_parent"
+      android:layout_height="60dp"
+      >
+
+    <ImageView
+        android:id="@+id/back_imgv"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/vw_back"
+        tools:ignore="ContentDescription"
+        />
+
+    <CheckBox
+        android:id="@+id/voice_imagev"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:checked="true"
+        style="@style/VideoDetailCheckBoxTheme"
+        />
+
+    <TextView
+        android:id="@+id/title_tv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_weight="1"
+        android:ellipsize="marquee"
+        android:gravity="center"
+        android:shadowColor="@color/alpha_black_80"
+        android:shadowDx="1"
+        android:shadowDy="2"
+        android:shadowRadius="2"
+        android:singleLine="true"
+        android:textColor="?android:textColorPrimary"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:text="白露为霜"
+        />
+
+  </RelativeLayout>
+
+  <TextView
+      android:id="@+id/tv_video_info"
+      android:layout_width="match_parent"
+      android:layout_height="40dp"
+      android:layout_above="@+id/fl_bottom"
+      android:layout_marginLeft="15dp"
+      android:layout_marginRight="15dp"
+      android:gravity="center_vertical"
+      android:shadowColor="@color/alpha_black_80"
+      android:shadowDx="1"
+      android:shadowDy="2"
+      android:shadowRadius="2"
+      android:textColor="?android:textColorPrimary"
+      android:textSize="@dimen/sp_14"
+      android:visibility="gone"
+      tools:text="@string/detail_video_info"
+      />
+
+
+  <FrameLayout
+      android:id="@+id/video_ad_container"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      >
+
+  </FrameLayout>
+
+  <RelativeLayout
+      android:id="@+id/fl_bottom"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_above="@id/video_ad_container"
+      android:layout_marginBottom="15dp"
+      >
+
+    <RelativeLayout
+        android:id="@+id/set_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_toLeftOf="@+id/ll_right"
+        >
+
+      <ProgressBar
+          android:id="@+id/down_progress"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_centerInParent="true"
+          android:layout_marginLeft="20dp"
+          android:layout_marginRight="20dp"
+          android:background="@color/transparent"
+          android:max="100"
+          android:progress="0"
+          android:progressDrawable="@drawable/selector_progress"
+          style="@android:style/Widget.ProgressBar.Horizontal"
+          />
+
+      <Button
+          android:id="@+id/set_wp_btn"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_centerInParent="true"
+          android:layout_marginLeft="20dp"
+          android:layout_marginRight="20dp"
+          android:background="@drawable/selector_set_btn"
+          android:gravity="center"
+          android:text="@string/set_live_wp"
+          android:textColor="?android:textColorPrimary"
+          android:textSize="18sp"
+          android:textStyle="bold"
+          />
+    </RelativeLayout>
+
+    <include
+        layout="@layout/include_detail_ll_right"
+        android:id="@+id/ll_right"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        />
+  </RelativeLayout>
+
+  <ImageView
+      android:id="@+id/change_button"
+      android:layout_width="48dp"
+      android:layout_height="48dp"
+      android:layout_centerInParent="true"
+      android:src="@drawable/vw_video_start"
+      tools:ignore="ContentDescription"
+      />
+
+  <ProgressBar
+      android:id="@+id/loading"
+      android:layout_width="48dp"
+      android:layout_height="48dp"
+      android:layout_centerInParent="true"
+      android:indeterminate="false"
+      android:indeterminateDrawable="@drawable/dialog_loading"
+      android:visibility="gone"
+      tools:visibility="visible"
+      style="@android:style/Widget.ProgressBar"
+      />
+</RelativeLayout>

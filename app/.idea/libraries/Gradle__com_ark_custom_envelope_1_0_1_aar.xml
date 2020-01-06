@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.ark.custom:envelope:1.0.1@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/18bc11451aa732d25afc6f9184f946ff/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/18bc11451aa732d25afc6f9184f946ff/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.ark.custom/envelope/1.0.1/e02a6a197728b45db145f01e8b1e7e644e08342b/envelope-1.0.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.ark.custom/envelope/1.0.1/a6537dbf8084d5cf9b62e0d1c827cef3d994d858/envelope-1.0.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

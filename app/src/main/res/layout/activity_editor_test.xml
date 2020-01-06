@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@android:color/background_dark"
+              android:orientation="vertical">
+
+    <LinearLayout
+            android:id="@+id/title_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <Button
+                android:id="@+id/back_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/btn_back"
+                android:onClick="onClickBack"/>
+
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:gravity="center"
+                android:text="编辑视频"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"/>
+
+        <Button
+                android:id="@+id/save_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/btn_next"
+                android:onClick="onSaveEdit"/>
+    </LinearLayout>
+
+    <com.novv.dzdesk.video.op.SquareRelativeLayout
+            android:id="@+id/preview_wrapper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title_layout">
+
+        <com.novv.dzdesk.video.op.view.SquareGLSurfaceView
+                android:id="@+id/preview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        <VideoView
+                android:id="@+id/test"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+
+    </com.novv.dzdesk.video.op.SquareRelativeLayout>
+
+</LinearLayout>

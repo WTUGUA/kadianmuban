@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <RelativeLayout
+            android:id="@+id/search_top_rl"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+        <RelativeLayout
+                android:id="@+id/search_rl"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/search_search_tv"
+                android:background="@drawable/serch_bg">
+
+            <ImageView
+                    android:id="@+id/search_flag_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="0dp"
+                    android:src="@drawable/edit_icon_search"/>
+
+            <EditText
+                    android:id="@+id/search_auto_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_toRightOf="@+id/search_flag_iv"
+                    android:background="@color/transparent"
+                    android:hint="@string/search_input_hint"
+                    android:imeOptions="actionSearch"
+                    android:lines="1"
+                    android:singleLine="true"
+                    android:textColor="?android:textColorPrimary"
+                    android:textColorHint="?android:textColorSecondary"
+                    android:textSize="13sp"/>
+
+            <ImageView
+                    android:id="@+id/auto_close_iv"
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:src="@drawable/ic_close"/>
+        </RelativeLayout>
+
+        <TextView
+                android:id="@+id/search_search_tv"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="@string/search_btn_title"
+                android:textColor="?android:textColorPrimary"
+                android:textSize="16sp"/>
+    </RelativeLayout>
+
+    <!-- 热搜词 -->
+    <TextView
+            android:id="@+id/tag_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/search_top_rl"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/search_hot_title"
+            android:textColor="@color/general_blue"
+            android:textSize="16sp"/>
+
+    <com.novv.dzdesk.ui.view.FlowLayout
+            android:id="@+id/flowlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tag_title"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"/>
+
+    <View
+            android:id="@+id/cut_line"
+            style="@style/AppWidget.DeepLine"
+            android:layout_below="@+id/flowlayout"
+            android:layout_marginTop="10dp"/>
+
+    <RelativeLayout
+            android:id="@+id/history_rl"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/cut_line"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="10dp">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/search_history"
+                android:textColor="@color/general_blue"
+                android:textSize="16sp"/>
+
+        <RelativeLayout
+                android:id="@+id/clear_history_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true">
+
+            <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/clear_tv"
+                    android:src="@drawable/ic_delete"/>
+
+            <TextView
+                    android:id="@+id/clear_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:text="@string/search_history_clear_title"
+                    android:textColor="?android:textColorPrimary"
+                    android:textSize="16sp"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <ListView
+            android:id="@+id/history_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/history_rl"
+            android:layout_alignStart="@+id/history_rl"
+            android:layout_alignLeft="@+id/history_rl"
+            android:layout_marginTop="10dp"
+            android:divider="?android:listDivider"
+            android:dividerHeight="1dp"
+            android:scrollbars="none"/>
+
+</RelativeLayout>

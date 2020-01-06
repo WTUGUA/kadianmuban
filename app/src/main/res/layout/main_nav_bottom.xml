@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.novv.dzdesk.ui.view.NavBottomBar xmlns:android="http://schemas.android.com/apk/res/android"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/dp60"
+                                        android:layout_gravity="bottom"
+                                        android:clickable="true"
+                                        android:orientation="vertical">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:baselineAligned="false"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+        <include
+                android:id="@+id/nav_first_ll"
+                layout="@layout/main_nav_tab"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp48"
+                android:layout_weight="1"/>
+
+        <include
+                android:id="@+id/nav_second_ll"
+                layout="@layout/main_nav_tab"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp48"
+                android:layout_weight="1"/>
+
+        <include
+                android:id="@+id/nav_null_ll"
+                layout="@layout/main_nav_tab"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp48"
+                android:layout_weight="1"/>
+
+        <include
+                android:id="@+id/nav_third_ll"
+                layout="@layout/main_nav_tab"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp48"
+                android:layout_weight="1"/>
+
+        <include
+                android:id="@+id/nav_fourth_ll"
+                layout="@layout/main_nav_tab"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp48"
+                android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <include
+            android:id="@+id/nav_upload_ll"
+            layout="@layout/main_nav_tab_upload"
+            android:layout_width="@dimen/dp60"
+            android:layout_height="@dimen/dp60"
+            android:layout_centerInParent="true"/>
+</com.novv.dzdesk.ui.view.NavBottomBar>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                    android:layout_width="match_parent"
+                                    app:contentPaddingLeft="10dp"
+                                    app:contentPaddingRight="10dp"
+                                    app:contentPaddingTop="10dp"
+                                    app:cardUseCompatPadding="false"
+                                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                                    app:cardBackgroundColor="@android:color/transparent"
+                                    android:layout_height="wrap_content">
+
+    <FrameLayout
+            android:id="@+id/rootView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></FrameLayout>
+</android.support.v7.widget.CardView>

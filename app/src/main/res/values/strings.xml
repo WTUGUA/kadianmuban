@@ -1,0 +1,158 @@
+<resources>
+    <string name="app_name">节奏模板视频</string>
+
+    <!--标题栏目-->
+    <string name="nav_tab_home_name">首页</string>
+    <string name="nav_tab_category_name">分类</string>
+    <string name="nav_tab_avatar_name">头像</string>
+    <string name="nav_tab_local_name">本地</string>
+    <string name="nav_tab_rings_name">铃声</string>
+    <string name="nav_tab_person_name">我的</string>
+    <string name="nav_new_title">最新</string>
+    <string name="nav_recommend_title">推荐</string>
+    <string name="nav_category_title">分类</string>
+    <string name="nav_hot_title">热门</string>
+    <string name="nav_model_title">定制</string>
+    <string name="nav_local_title">已下载</string>
+    <string name="nav_rings_title">彩铃</string>
+    <string name="nav_person_favorite">我的收藏</string>
+    <string name="nav_person_contribute">我的上传</string>
+    <string name="nav_other_person_favorite">他的收藏</string>
+    <string name="nav_other_person_contribute">他的上传</string>
+    <string name="sel_local_video">选择本地</string>
+    <string name="chose_local_title">视频裁剪</string>
+
+    <!--提示文本-->
+    <string name="text_nothing_download">还没有下载的视频壁纸</string>
+    <string name="text_nothing_favorite">登录后才可以收藏哦！</string>
+    <string name="text_nothing_contribute">登录后才可以上传哦！</string>
+    <string name="text_network_error">加载失败，点击重试</string>
+    <string name="text_loading_empty">暂未获取到数据</string>
+    <string name="main_network_error">网络已断开，请检查连接</string>
+
+    <!--设置页面-->
+    <string name="set_cache_title">清除缓存</string>
+    <string name="set_fail_help_title">设置视频壁纸不成功，点这里</string>
+    <string name="set_title">本地设置</string>
+    <string name="set_cooperation">官方QQ群</string>
+    <string name="set_feedback_title">意见反馈</string>c
+    <string name="set_about_title">关于</string>
+    <string name="set_logout">退出登录</string>
+    <string name="about_prefix">光点视频壁纸</string>
+    <string name="about_suffix">你值得拥有</string>
+
+    <!--对话框-->
+    <string name="dialog_title">提示</string>
+    <string name="dialog_download_content">正在下载高清壁纸，是否停止下载？</string>
+    <string name="dialog_sure">确定</string>
+    <string name="dialog_cancel">取消</string>
+
+    <!-- 分享 -->
+    <string name="share_title">分享到</string>
+    <string name="share_success_tip1">分享成功</string>
+    <string name="share_cancel">分享取消</string>
+    <string name="share_fail">分享失败</string>
+    <string name="share_dialog_title">推荐给好友</string>
+    <string name="share_default_notice">点开看看~来自&#160;&#160;光点视频壁纸</string>
+    <string name="share_sina_not_support">你的手机暂不支持微博分享</string>
+    <string name="sinaweibo_no_installed">你还没有安装新浪微博</string>
+    <string name="download_url_error">图片地址异常，请重试</string>
+    <string name="share_desc">来自蓝星最美视频壁纸App\"光点视频壁纸\"的分享</string>
+
+    <!-- 微信 -->
+    <string name="errcode_success">分享成功</string>
+    <string name="errcode_cancel">分享取消</string>
+    <string name="errcode_deny">分享请求被拒绝</string>
+    <string name="errcode_unknown">Canceled</string>
+
+    <!-- 更新弹窗 -->
+    <string name="update_title">更新提示</string>
+    <string name="update_date">更新日期：%s</string>
+    <string name="update_explain">更新说明：</string>
+    <string name="update_size"> 大小：%s</string>
+    <string name="update_version">版本：%s</string>
+    <string name="update_next_time">下次再说</string>
+    <string name="update_now">立即更新</string>
+
+    <!-- 搜索 -->
+    <string name="search_input_hint">请输入关键词</string>
+    <string name="search_btn_title">搜索</string>
+    <string name="search_hot_title">大家都在搜</string>
+    <string name="search_history_clear_title">清除</string>
+    <string name="search_history">历史记录</string>
+    <string name="search_input_empty">请输入搜索内容</string>
+    <string name="search_nothing">请搜索其他内容试试</string>
+
+    <!-- 操作 -->
+    <string name="operating">处理中</string>
+    <string name="op_failed">操作失败，请重试</string>
+    <string name="op_open_file_failed">打开文件失败，请重试</string>
+    <string name="op_not_support">操作不支持，请重试</string>
+    <string name="op_not_file">文件不存在，请重试</string>
+    <string name="op_success">操作成功</string>
+    <string name="op_canceled">操作取消</string>
+    <string name="op_delete_cannot_currentlw">不能删除正在使用的视频壁纸</string>
+    <string name="op_sdcard_no_mount">SD卡未挂载</string>
+    <string name="op_pressed_back_quit">再次点击返回键退出应用</string>
+
+    <!--视频裁剪上传-->
+    <string name="video_time_format">已选中%d秒</string>
+    <string name="video_type_not_support">该视频格式不支持裁剪, 请尝试以下格式:asx,asf,mpg,wmv,3gp,mp4,mov,avi,flv</string>
+    <string name="video_file_not_support">该视频文件不支持裁剪，换一个试试吧</string>
+    <string name="video_file_not_exist">无法读取该视频文件</string>
+    <string name="video_crop_text">裁剪</string>
+    <string name="video_crop_fail">视频裁剪失败</string>
+    <string name="video_crop_disable">您的手机暂不支持裁剪功能</string>
+    <string name="video_crop_ensure">确定</string>
+    <string name="video_next_text">下一步</string>
+    <string name="video_voice_text">桌面声音</string>
+    <string name="upload_failed_try">上传失败，请重试</string>
+    <string name="upload_ing">开始上传内容…</string>
+    <string name="upload_empty_notice">没有选择上传内容</string>
+    <string name="upload">上&#160;&#160;&#160;传</string>
+    <string name="video_saved">视频已保存到相册</string>
+    <string name="video_name">视频名称:</string>
+    <string name="video_name_hint">请输入视频壁纸名称</string>
+    <string name="video_type">视频分类：</string>
+
+    <!-- 用户系统 -->
+    <string name="user_title_login">登录</string>
+    <string name="user_msg_logout">登录后可云端收藏哦！</string>
+    <string name="user_login_oauth_failed">授权失败，请稍后再试</string>
+    <string name="user_login_get_userinfo_error">获取用户信息失败，请稍后再试</string>
+    <string name="login_please_login">请您先登录</string>
+    <string name="user_favor_nothing_logout">登陆后才可以收藏视频壁纸</string>
+    <string name="user_upload_nothing_logout">登陆后才可以上传视频壁纸</string>
+    <string name="user_favor_nothing_login">还没有收藏的视频壁纸</string>
+    <string name="user_upload_nothing_login">还没有上传的视频壁纸</string>
+    <string name="comment_input_hint">说点什么吧</string>
+    <string name="comment_input_hint_login">登录后才可以评论哦</string>
+    <string name="user_comment_title">评论</string>
+    <string name="user_comment_send">发送</string>
+    <string name="user_comment_edit_content_limit">最多评论五十个字</string>
+    <string name="user_comment_nothing">暂无评论</string>
+    <string name="set_userinfo">个人信息设置</string>
+    <string name="set_volume">桌面视频音量</string>
+    <string name="set_nickname">昵称设置</string>
+    <string name="set_avatar">头像设置</string>
+    <string name="set_sign">个性签名设置</string>
+    <string name="set_edit_sign_hint">请输入签名</string>
+    <string name="login_et_pwd_hint">输入验证码</string>
+    <string name="login_btn_send_code">发送验证码</string>
+    <string name="login_et_phone_hint">输入手机号</string>
+
+    <!--详情-->
+    <string name="detail_video_info">时长&#160;%1$s&#160;&#160;&#160;大小&#160;%2$dM</string>
+    <string name="detail_play_preview_notice">预览为压缩画质，下载均为高清资源</string>
+    <string name="set_live_wp">设为桌面</string>
+    <string name="set_live_wp_downloading">下载中</string>
+    <string name="set_live_wp_download">下载高清</string>
+    <string name="activity_title">设为视频壁纸</string>
+    <string name="donwloaded_finished">下载完成</string>
+    <string name="down_fail">下载出现异常</string>
+
+    <string name="pressed_back_quit">再次点击返回键退出应用</string>
+    <string name="loading">正在加载中...</string>
+    <string name="load_failed">加载失败，请点我重试</string>
+    <string name="load_end">没有更多数据</string>
+</resources>

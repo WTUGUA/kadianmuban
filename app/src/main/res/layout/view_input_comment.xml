@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_gravity="bottom"
+              android:baselineAligned="false"
+              android:focusable="true"
+              android:focusableInTouchMode="true"
+              android:gravity="center_vertical"
+              android:minHeight="40dp"
+              android:orientation="horizontal">
+
+    <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1.0">
+
+        <EditText
+                android:id="@+id/send_edt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/bg_input_comment"
+                android:ellipsize="end"
+                android:hint="@string/comment_input_hint"
+                android:maxLines="4"
+                android:minHeight="38dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColor="?android:textColorPrimary"
+                android:textColorHint="?android:textColorSecondary"
+                android:textCursorDrawable="@null"
+                android:textSize="14sp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp">
+
+        <TextView
+                android:id="@+id/send_btn"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/bg_send_comment_selector"
+                android:clickable="true"
+                android:enabled="false"
+                android:gravity="center"
+                android:minHeight="28dp"
+                android:text="@string/user_comment_send"
+                android:textColor="@color/btn_enable_text_color"
+                android:textSize="14sp"
+                android:visibility="visible"/>
+
+    </RelativeLayout>
+</LinearLayout>

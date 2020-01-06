@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?><!-- shape如果不声明形状则默认为正方形 -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners
+            android:bottomLeftRadius="0dp"
+            android:bottomRightRadius="10px"
+            android:topLeftRadius="0dp"
+            android:topRightRadius="10px"/>
+    <solid android:color="@color/color_btn_blue"/>
+</shape>

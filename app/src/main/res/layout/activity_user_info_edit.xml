@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context=".ui.activity.user.UserInfoEditActivity">
+
+    <LinearLayout
+            android:id="@+id/detail_top_rl"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="top"
+            android:background="?attr/widgetBackgroundTitle">
+
+        <ImageView
+                android:id="@+id/btn_back"
+                android:layout_width="32dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:padding="4dp"
+                android:adjustViewBounds="true"
+                tools:ignore="ContentDescription"
+                android:src="@drawable/back"/>
+
+        <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:ellipsize="end"
+                android:maxEms="20"
+                android:maxLines="2"
+                android:shadowColor="@color/alpha_black_80"
+                android:shadowDx="1"
+                android:shadowDy="2"
+                android:shadowRadius="2"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textColor="?android:textColorPrimary"
+                android:text="@string/set_userinfo"/>
+
+        <LinearLayout
+                android:id="@+id/ll_right"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal"
+                android:gravity="end|center_vertical"
+                android:clickable="true">
+
+            <TextView
+                    android:id="@+id/tv_sure"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:background="@drawable/shape_radius_selector_small"
+                    android:textSize="14sp"
+                    android:textColor="?android:textColorPrimary"
+                    android:text="@string/dialog_sure"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:orientation="vertical"
+            android:background="?attr/widgetBackground">
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                android:textColor="?android:textColorPrimary"
+                android:text="@string/set_nickname"/>
+
+        <EditText
+                android:id="@+id/et_input_nickname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:padding="5dp"
+                android:minHeight="38dp"
+                android:background="@color/transparent"
+                android:maxLength="8"
+                android:maxLines="2"
+                android:textSize="16sp"
+                tools:ignore="TextFields"
+                android:textColorHint="?android:textColorSecondary"
+                android:textColor="?android:textColorPrimary"
+                tools:hint="ssdfasfaf"/>
+
+        <View style="@style/AppWidget.DeepLine"/>
+
+        <View style="@style/AppWidget.ShadowGap"/>
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textSize="18sp"
+                android:textColor="?android:textColorPrimary"
+                android:text="@string/set_sign"/>
+
+        <EditText
+                android:id="@+id/et_input_sign"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:padding="5dp"
+                android:minHeight="38dp"
+                android:background="@color/transparent"
+                android:maxLength="30"
+                android:maxLines="2"
+                android:textSize="16sp"
+                tools:ignore="TextFields"
+                android:textColorHint="?android:textColorSecondary"
+                android:textColor="?android:textColorPrimary"
+                tools:hint="@string/set_edit_sign_hint"/>
+
+        <View style="@style/AppWidget.DeepLine"/>
+
+        <View style="@style/AppWidget.ShadowGap"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:orientation="vertical"
+            android:background="?attr/widgetBackground">
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                android:textColor="?android:textColorPrimary"
+                android:text="@string/set_avatar"/>
+
+        <com.xslczx.widget.ShapeImageView
+                android:id="@+id/imageView"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginTop="10dp"
+                app:siv_shape="rect"
+                app:siv_round_radius="6dp"
+                tools:src="@drawable/user_avatar_default"/>
+
+    </LinearLayout>
+</LinearLayout>

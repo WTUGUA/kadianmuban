@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../LanSongSDK/LanSongSDK.iml" filepath="$PROJECT_DIR$/../LanSongSDK/LanSongSDK.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app.iml" filepath="$PROJECT_DIR$/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../resource-share-master.iml" filepath="$PROJECT_DIR$/../resource-share-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../unity_ads/unity_ads.iml" filepath="$PROJECT_DIR$/../unity_ads/unity_ads.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="dialog_text_normal">#757575</color>
+    <color name="dialog_text_orange">#ff5c1c</color>
+    <color name="textbule">#007AFF</color>
+    <color name="lowgray">#D6D6D6</color>
+    <color name="haoping">#FF8319F9</color>
+    <color name="jujue"> #ffe8e8e8</color>
+    <color name="ziti">#FF333333</color>
+    <color name="ziti2">#FF666666</color>
+    <color name="ziti3">#FF262626</color>
+    <color name="shouye">#EBECED</color>
+
+
+
+
+</resources>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:id="@+id/activity_home"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/selector_share_bg"
+            android:orientation="vertical">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:orientation="vertical">
+
+            <TextView
+                    android:id="@+id/update_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/update_title"
+                    android:textColor="?android:textColorPrimary"
+                    android:textSize="16sp"
+                    android:textStyle="bold"/>
+
+            <TextView
+                    android:id="@+id/apk_version_code_tv"
+                    style="@style/updateText"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    tools:text="版        本:2.3.4"/>
+
+            <TextView
+                    android:id="@+id/apk_size_tv"
+                    style="@style/updateText"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    tools:text="大        小:5.77"/>
+
+            <TextView
+                    android:id="@+id/update_time_tv"
+                    style="@style/updateText"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    tools:text="更新日期:08月07日"/>
+
+            <TextView
+                    style="@style/updateText"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/update_explain"/>
+
+            <TextView
+                    android:id="@+id/update_msg_tv"
+                    style="@style/updateText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:background="@color/transparent"
+                    android:maxHeight="200dp"
+                    tools:text="1.优化首页加载速度。
+2.增强下载速度和桌面声音开关
+3.遇到问题请在我的-设置里反馈
+4.紧急修复客户端bug导致的页面相同问题"/>
+
+            <!-- Line -->
+            <View
+                    style="@style/AppWidget.DeepLine"
+                    android:layout_marginTop="10dp"/>
+
+            <!-- 底部按钮 -->
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+                <TextView
+                        android:id="@+id/updateCancelBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="45dp"
+                        android:clickable="true"
+                        android:text="@string/update_next_time"
+                        android:textColor="?android:textColorPrimary"
+                        android:textSize="16sp"
+                        android:textStyle="bold"/>
+
+                <View
+                        style="@style/AppWidget.DeepLine.Vertical"
+                        android:layout_centerHorizontal="true"/>
+
+                <TextView
+                        android:id="@+id/updateNowBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="45dp"
+                        android:clickable="true"
+                        android:text="@string/update_now"
+                        android:textColor="@color/general_blue"
+                        android:textSize="16sp"
+                        android:textStyle="bold"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

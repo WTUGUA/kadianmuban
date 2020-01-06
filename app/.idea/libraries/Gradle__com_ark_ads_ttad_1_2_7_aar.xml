@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.ark.ads:ttad:1.2.7@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5866dee21369761fe2dc48b08d9a0b0a/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5866dee21369761fe2dc48b08d9a0b0a/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.ark.ads/ttad/1.2.7/89832e4dd8b96cc6e4ed6ab8dbb3bb4fdfdda7ad/ttad-1.2.7-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

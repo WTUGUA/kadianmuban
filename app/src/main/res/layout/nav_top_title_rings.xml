@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.novv.dzdesk.ui.view.NavTabTitleRingsBar xmlns:android="http://schemas.android.com/apk/res/android"
+                                               android:id="@+id/nav_ll"
+                                               android:layout_width="wrap_content"
+                                               android:layout_height="30dp"
+                                               android:layout_centerInParent="true"
+                                               android:layout_gravity="center_horizontal"
+                                               android:orientation="horizontal">
+
+    <RelativeLayout
+            android:id="@+id/nav_first_rl"
+            android:layout_width="60dp"
+            android:layout_height="match_parent">
+
+        <TextView
+                android:id="@+id/nav_first_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:gravity="center"
+                android:text="彩铃"
+                android:textColor="@color/nav_text_color_multip"
+                android:textSize="16sp"/>
+
+        <View
+                android:layout_width="30dp"
+                android:layout_height="2dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/selector_nav_top_selected_bg"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/nav_second_rl"
+            android:layout_width="60dp"
+            android:layout_height="match_parent">
+
+        <TextView
+                android:id="@+id/nav_second_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:gravity="center"
+                android:text="@string/nav_new_title"
+                android:textColor="@color/nav_text_color_multip"
+                android:textSize="16sp"/>
+
+        <View
+                android:layout_width="30dp"
+                android:layout_height="2dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/selector_nav_top_selected_bg"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/nav_third_rl"
+            android:layout_width="60dp"
+            android:layout_height="match_parent">
+
+        <TextView
+                android:id="@+id/nav_third_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:gravity="center"
+                android:text="@string/nav_hot_title"
+                android:textColor="@color/nav_text_color_multip"
+                android:textSize="16sp"/>
+
+        <View
+                android:layout_width="30dp"
+                android:layout_height="2dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/selector_nav_top_selected_bg"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/nav_forth_rl"
+            android:layout_width="60dp"
+            android:layout_height="match_parent">
+
+        <TextView
+                android:id="@+id/nav_forth_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:gravity="center"
+                android:text="@string/nav_category_title"
+                android:textColor="@color/nav_text_color_multip"
+                android:textSize="16sp"/>
+
+        <View
+                android:layout_width="30dp"
+                android:layout_height="2dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/selector_nav_top_selected_bg"/>
+    </RelativeLayout>
+
+</com.novv.dzdesk.ui.view.NavTabTitleRingsBar>

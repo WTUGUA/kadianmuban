@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.ark.custom:baseui:1.0.1@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4f7846cb2760004beff6bada16a5100f/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4f7846cb2760004beff6bada16a5100f/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.ark.custom/baseui/1.0.1/26540142114132c38d0857df18c904b870819a59/baseui-1.0.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.ark.custom/baseui/1.0.1/e1389ccb2ed6eede11f390adc7d850b65fc22618/baseui-1.0.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

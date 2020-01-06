@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.ark.tools:medialoader:1.0.1@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ac82626ee8f9f4a822253f8c2b7bd78c/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ac82626ee8f9f4a822253f8c2b7bd78c/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.ark.tools/medialoader/1.0.1/a64e4f616b42d2b02019c0380e618b63d1e27eba/medialoader-1.0.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.ark.tools/medialoader/1.0.1/a91713d016c90be73a37981a4936c0697ced672/medialoader-1.0.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

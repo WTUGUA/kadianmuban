@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.ark.ads:gdt:1.2.5@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0839ddc766cf74c1123eb8b9c5f42a6d/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0839ddc766cf74c1123eb8b9c5f42a6d/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.ark.ads/gdt/1.2.5/9b038e17140c30dcb7b7b2182ef8720e5beafd76/gdt-1.2.5-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.ark.ads/gdt/1.2.5/9c336f0276887d1de2897da0eeabfeafefe52e0b/gdt-1.2.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

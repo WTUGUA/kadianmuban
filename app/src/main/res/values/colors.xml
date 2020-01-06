@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--appcompat color-->
+    <color name="color_primary">#ff333333</color>
+    <color name="color_primary_dark">#ff282828</color>
+    <color name="color_accent">#ff05caee</color>
+
+    <color name="line">#383838</color>
+    <color name="text_desc">#999999</color>
+    <color name="edit_line">#F2F2F2</color>
+
+    <!--theme color light and dark-->
+    <color name="window_background_light">#ffeeeeee</color>
+    <color name="window_background_dark">#ff303030</color>
+    <color name="list_divider_light">#ffe0e0e0</color>
+    <color name="list_divider_dark">#ff666666</color>
+    <color name="text_primary_light">#de000000</color>
+    <color name="text_primary_dark">#ffffffff</color>
+    <color name="text_primary_disabled_light">#39000000</color>
+    <color name="text_primary_disabled_dark">#4dffffff</color>
+    <color name="text_secondary_light">#8a000000</color>
+    <color name="text_secondary_dark">#b3ffffff</color>
+    <color name="text_secondary_disabled_light">#24000000</color>
+    <color name="text_secondary_disabled_dark">#36ffffff</color>
+    <color name="widget_background_light">@android:color/white</color>
+    <color name="widget_background_checked_light">#ffeeeeee</color>
+    <color name="widget_background_dark">#ff3c3c3c</color>
+    <color name="widget_background_checked_dark">#ff444444</color>
+
+    <!--alpha color white-->
+    <color name="alpha_white_90">#e6ffffff</color>
+    <color name="alpha_white_80">#ccffffff</color>
+    <color name="alpha_white_70">#b3ffffff</color>
+    <color name="alpha_white_60">#99ffffff</color>
+    <color name="alpha_white_50">#80ffffff</color>
+    <color name="alpha_white_40">#66ffffff</color>
+    <color name="alpha_white_30">#40ffffff</color>
+    <color name="alpha_white_20">#33ffffff</color>
+    <color name="alpha_white_10">#1affffff</color>
+
+    <!--alpha color black-->
+    <color name="alpha_black_10">#1a000000</color>
+    <color name="alpha_black_20">#33000000</color>
+    <color name="alpha_black_30">#40000000</color>
+    <color name="alpha_black_40">#66000000</color>
+    <color name="alpha_black_50">#80000000</color>
+    <color name="alpha_black_60">#99000000</color>
+    <color name="alpha_black_70">#b3000000</color>
+    <color name="alpha_black_80">#cc000000</color>
+    <color name="alpha_black_90">#e6000000</color>
+
+    <!--main color-->
+    <color name="red">#ffff0000</color>
+    <color name="yellow">#ffffff00</color>
+    <color name="blue">#ff0000ff</color>
+    <color name="green">#ff00ff00</color>
+    <color name="white">#ffffffff</color>
+    <color name="black">#ff000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="yingsi">#FF22D7FD</color>
+    <color name="jujue1">#FFF4F5F6</color>
+    <color name="text">#FF2C2E30</color>
+    <color name="text16">#662C2E30</color>
+    <color name="shezhi">#FF333333</color>
+    <color name="shezhibeij">#FFFFFEFE</color>
+    <color name="view">#FFECECEC</color>
+
+
+
+    <!--general color-->
+    <color name="general_bright">#ffefefef</color>
+    <color name="general_light">#ffcccccc</color>
+    <color name="general_gray">#ff888888</color>
+    <color name="general_dark">#ff666666</color>
+    <color name="general_blue">#ff45bfce</color>
+    <color name="bg_shadow">#df000000</color>
+
+</resources>

@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/color_primary">
+
+    <RelativeLayout
+            android:id="@+id/top_rl"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/color_primary">
+
+        <ImageView
+                android:id="@+id/back_imgv"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_back_circle"
+                tools:ignore="ContentDescription"/>
+
+
+        <LinearLayout
+                android:id="@+id/post_ll"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:gravity="end|center_vertical"
+                android:onClick="onSaveEdit"
+                android:orientation="horizontal">
+
+            <TextView
+                    android:id="@+id/post_ll_tv"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_radius_selector_small"
+                    android:enabled="true"
+                    android:gravity="center"
+                    android:text="发布"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"/>
+        </LinearLayout>
+
+        <TextView
+                android:id="@+id/title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="60dp"
+                android:layout_weight="1"
+                android:ellipsize="marquee"
+                android:gravity="center"
+                android:shadowColor="@color/alpha_black_80"
+                android:shadowDx="1"
+                android:shadowDy="2"
+                android:shadowRadius="2"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:text="上传"/>
+
+    </RelativeLayout>
+
+    <EditText
+            android:id="@+id/video_title"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/top_rl"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/editor_cover_item_bg"
+            android:hint="添加标题"
+            android:textColor="@color/white"/>
+
+    <com.xslczx.widget.RatioImageView
+            android:id="@+id/video_cover_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/video_title"
+            android:layout_margin="20dp"
+            app:riv_width_to_height_ratio="0.667"
+            app:riv_height="200dp"/>
+
+    <RelativeLayout
+            android:id="@+id/chose_cateogry_ll"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/video_cover_iv"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+        <ImageView
+                android:id="@+id/category_iv"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/upload_category"/>
+
+        <TextView
+                android:id="@+id/category_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/category_iv"
+                android:scaleType="centerInside"
+                android:text="分类"
+                android:textColor="@color/white"
+                android:textSize="16sp"/>
+
+
+        <TextView
+                android:id="@+id/category_chose_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:scaleType="centerInside"
+                android:text="请选择 >"
+                android:textColor="@color/text_desc"
+                android:textSize="14sp"/>
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentTop="true"
+                android:background="@color/line"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/chose_privacy_ll"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/chose_cateogry_ll"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+
+        <ImageView
+                android:id="@+id/privacy_iv"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/upload_privacy"/>
+
+        <TextView
+                android:id="@+id/privacy_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/privacy_iv"
+                android:scaleType="centerInside"
+                android:text="谁可以看"
+                android:textColor="@color/white"
+                android:textSize="16sp"/>
+
+
+        <TextView
+                android:id="@+id/privacy_chose_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:scaleType="centerInside"
+                android:text="公开"
+                android:textColor="@color/white"
+                android:textSize="14sp"/>
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentTop="true"
+                android:background="@color/line"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/save_local_ll"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/chose_privacy_ll"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+        <TextView
+                android:id="@+id/save_local_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:scaleType="centerInside"
+                android:text="同时保存到本地"
+                android:textColor="@color/white"/>
+
+        <ImageView
+                android:id="@+id/save_local_iv"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/save_local_tv"
+                android:scaleType="centerInside"
+                android:src="@drawable/select"/>
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentTop="true"
+                android:background="@color/line"/>
+
+    </RelativeLayout>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="10dp"
+            android:text="官方QQ群：561633383"
+            android:textColor="#999999"
+            android:textSize="12sp"/>
+
+    <FrameLayout
+            android:id="@+id/fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+    </FrameLayout>
+
+</RelativeLayout>

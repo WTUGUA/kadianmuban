@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.ark.custom:kvalue:1.0.1@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1ee64377a3dc21c94d5540707bd057d0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1ee64377a3dc21c94d5540707bd057d0/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.ark.custom/kvalue/1.0.1/a8289a73ca6c42bcb2d161be909c268e8fd14bed/kvalue-1.0.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.ark.custom/kvalue/1.0.1/af7107e614ed09389f7aadc427d94d9b4ad5a1ee/kvalue-1.0.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

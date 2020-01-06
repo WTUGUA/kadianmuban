@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.ark.ads:zhaocai:1.2.7@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/dd3182e0ff588ffeeb0aea554958125f/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/dd3182e0ff588ffeeb0aea554958125f/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.ark.ads/zhaocai/1.2.7/a210447f7250116c37a75049fa1b9c48d4108ef4/zhaocai-1.2.7-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

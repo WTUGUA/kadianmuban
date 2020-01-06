@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@color/white"
+                tools:context=".ui.activity.ae.AEPreviewActivity">
+
+    <ImageView
+            android:id="@+id/bg_cover"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"/>
+
+    <RelativeLayout
+            android:id="@+id/ll_top"
+            android:layout_width="match_parent"
+            android:layout_height="48dp">
+
+        <ImageView
+                android:id="@+id/back_view"
+                android:layout_width="32dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:padding="4dp"
+                android:adjustViewBounds="true"
+                android:src="@mipmap/btn_ae_back"/>
+
+        <ImageView
+            android:id="@+id/btn_settings"
+            android:layout_width="32dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"
+            android:padding="4dp"
+            android:adjustViewBounds="true"
+            android:src="@mipmap/btn_setting"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/ll_bottom"
+            android:layout_below="@+id/ll_top"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp">
+
+        <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+            <com.novv.dzdesk.ui.view.player.TextureVideoView
+                    android:id="@+id/vv_videoView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+        </FrameLayout>
+
+        <com.xslczx.widget.RatioImageView
+                android:id="@+id/ic_cover"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:scaleType="centerCrop"
+                app:riv_width_to_height_ratio="0.567"
+                tools:src="@drawable/lw_thumb"/>
+
+        <ImageView
+                android:id="@+id/change_button"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_centerInParent="true"
+                tools:ignore="ContentDescription"
+                android:src="@mipmap/btn_play"/>
+
+        <ProgressBar
+                style="@android:style/Widget.ProgressBar"
+                android:id="@+id/loading"
+                android:visibility="gone"
+                tools:visibility="visible"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_centerInParent="true"
+                android:indeterminate="false"
+                android:indeterminateDrawable="@drawable/dialog_loading"/>
+    </RelativeLayout>
+
+    <LinearLayout
+            android:id="@+id/ll_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="80dp"
+            android:orientation="vertical">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:background="@mipmap/bg_share">
+
+            <com.novv.dzdesk.ui.view.DrawableTextView
+                    android:id="@+id/btn_set_wp"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="@dimen/dp_40"
+                    android:gravity="center"
+                    app:drawableWidth="46dp"
+                    app:drawableHeight="46dp"
+                    android:textSize="13sp"
+                    android:drawablePadding="5dp"
+                    app:drawableTop="@mipmap/ae_btn_set_as_desktop"
+                    android:textColor="@color/text13"
+                    android:text="设为桌面"/>
+            <com.novv.dzdesk.ui.view.DrawableTextView
+                    android:id="@+id/btn_save"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="@dimen/dp_40"
+                    android:gravity="center"
+                    app:drawableWidth="46dp"
+                    app:drawableHeight="46dp"
+                    android:drawablePadding="5dp"
+                    android:textSize="13sp"
+                    app:drawableTop="@mipmap/ae_btn_save"
+                    android:textColor="@color/text13"
+                    android:text="保存本地"/>
+            <com.novv.dzdesk.ui.view.DrawableTextView
+                    android:id="@+id/btn_share"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="@dimen/dp_40"
+                    android:gravity="center"
+                    app:drawableWidth="46dp"
+                    app:drawableHeight="46dp"
+                    android:drawablePadding="5dp"
+                    android:textSize="13sp"
+                    app:drawableTop="@mipmap/ae_btn_share"
+                    android:textColor="@color/text13"
+                    android:text="分享"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

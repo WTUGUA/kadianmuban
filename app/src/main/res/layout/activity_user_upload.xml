@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <FrameLayout
+            android:id="@+id/fl_top"
+            android:layout_width="match_parent"
+            android:layout_height="48dp">
+        <ImageView
+                android:id="@+id/btn_back"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/back"
+                android:layout_width="32dp"
+                android:padding="4dp"
+                android:layout_marginLeft="10dp"
+                android:adjustViewBounds="true"
+                android:layout_height="match_parent"/>
+
+        <TextView
+                android:includeFontPadding="false"
+                android:textSize="16sp"
+                android:textColor="@android:color/white"
+                android:id="@+id/tv_title"
+                android:text="我的上传"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+    </FrameLayout>
+    <View
+            android:background="#80787878"
+            android:layout_width="match_parent"
+            android:layout_height="1px"/>
+    <FrameLayout
+            android:id="@+id/fl_tips"
+            android:background="#fa9f10"
+            android:layout_width="match_parent"
+            android:layout_height="38dp">
+        <TextView
+                android:includeFontPadding="false"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_gravity="center"
+                android:textColor="@android:color/white"
+                android:text="想享受优先审核特权？点我升级到VIP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        <ImageView
+                android:id="@+id/btn_tips_close"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="center_vertical|end"
+                android:src="@mipmap/ic_cloud_tips_close"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+    </FrameLayout>
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+            android:id="@+id/refreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <com.scwang.smartrefresh.layout.header.ClassicsHeader
+                android:layout_width="match_parent"
+                app:srlAccentColor="@android:color/white"
+                android:layout_height="wrap_content"/>
+
+        <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:listSelector="@android:color/transparent"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+                app:layoutManager="android.support.v7.widget.GridLayoutManager"
+                app:spanCount="3"
+                tools:listitem="@layout/resource_item_layout"/>
+
+        <com.scwang.smartrefresh.layout.footer.ClassicsFooter
+                app:srlAccentColor="@android:color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>
+

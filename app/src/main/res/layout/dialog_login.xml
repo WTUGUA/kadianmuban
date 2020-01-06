@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:orientation="vertical">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/selector_share_bg">
+
+        <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="35dp"
+                android:gravity="center"
+                android:text="@string/login_please_login"
+                android:textColor="@color/color_accent"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+        <TextView
+                android:id="@+id/tv_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_title"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="25dp"
+                android:text="为了啥啥啥，您一定要登录才行啊，求你了"
+                android:textColor="?android:textColorPrimary"
+                android:textSize="14sp"/>
+
+        <ImageView
+                android:id="@+id/btn_close"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="1dp"
+                android:padding="10dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/share_close"/>
+
+        <!-- Line -->
+        <View
+                android:id="@+id/view_line"
+                android:layout_height="1px"
+                style="@style/AppWidget.DeepLine"
+                android:layout_below="@+id/tv_desc"
+                android:layout_marginTop="16dp"/>
+
+        <!-- 底部按钮 -->
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/view_line">
+
+            <TextView
+                    android:id="@+id/btn_sure"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:clickable="true"
+                    android:padding="8dp"
+                    android:text="@string/dialog_sure"
+                    android:textColor="@color/general_blue"
+                    android:textSize="16sp"
+                    android:textStyle="bold"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>

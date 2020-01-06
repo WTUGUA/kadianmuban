@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="Gradle: com.ark.ads:basics:1.2.5@aar">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b242142d86c4f11d5426b310674a7826/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b242142d86c4f11d5426b310674a7826/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b242142d86c4f11d5426b310674a7826/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.ark.ads/basics/1.2.5/e55ce801247523e0b95697709423e9587378e5b1/basics-1.2.5-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.ark.ads/basics/1.2.5/bda92d82c585f4e727662bc908e54a87a4377886/basics-1.2.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

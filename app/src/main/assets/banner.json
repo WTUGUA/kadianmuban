@@ -1,0 +1,23 @@
+{
+  "msg": "",
+  "count": 2,
+  "code": 0,
+  "data": [
+    {
+      "index": "",
+      "img": "http://cdn.video.dandanjiang.tv/banner/5b501345e7bce70cf2acb660.png?sign=791ae85234b6ad0aa5a0ff5b864ca000&t=5bc81d40",
+      "title": "测试",
+      "value": "https://developers.weixin.qq.com/miniprogram/dev/component/label.html",
+      "_id": "5b501345e7bce70cf2acb660",
+      "type": "url"
+    },
+    {
+      "index": "1",
+      "img": "http://cdn.video.dandanjiang.tv/banner/5b501392e7bce70d2c180e43.png?sign=d3a2828276e3aefade57f72899918915&t=5bc81d40",
+      "title": "新的banner",
+      "value": "5b4dc3c404220837a917f251",
+      "_id": "5b501392e7bce70d2c180e43",
+      "type": "video"
+    }
+  ]
+}

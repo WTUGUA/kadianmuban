@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.scwang.smartrefresh.layout.SmartRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/refreshLayout"
+    android:layout_height="match_parent"
+    >
+
+    <com.scwang.smartrefresh.layout.header.ClassicsHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    <android.support.v4.widget.NestedScrollView
+            android:fillViewport="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <RelativeLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp">
+
+                <ImageView
+                        android:id="@+id/btn_settings"
+                        android:layout_marginTop="15dp"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/ic_setting"
+                        android:layout_width="48dp"
+                        android:padding="12dp"
+                        android:adjustViewBounds="true"
+                        android:layout_height="wrap_content"/>
+
+                <com.xslczx.widget.ShapeImageView
+                        android:id="@+id/iv_user_img"
+                        android:layout_centerVertical="true"
+                        app:siv_round_radius="6dp"
+                        app:siv_shape="rect"
+                        app:siv_border_color="#cacaca"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_gravity="center_vertical"
+                        tools:src="@drawable/user_avatar_default"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"/>
+
+                <LinearLayout
+                        android:visibility="gone"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:layout_toRightOf="@+id/iv_user_img"
+                        android:layout_alignTop="@+id/iv_user_img"
+                        android:layout_alignBottom="@+id/iv_user_img"
+                        android:orientation="vertical"
+                        android:id="@+id/ll_user_logout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+                    <TextView
+                            android:paddingLeft="32dp"
+                            android:paddingRight="32dp"
+                            android:layout_gravity="top"
+                            android:gravity="center"
+                            android:id="@+id/btn_login"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:background="@color/color_accent"
+                            android:text="@string/user_title_login"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/sp_16"/>
+
+                    <TextView
+                            android:gravity="bottom"
+                            android:layout_gravity="bottom"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:text="@string/user_msg_logout"
+                            android:textColor="?android:attr/textColorSecondary"
+                            android:textSize="@dimen/sp_14"/>
+                </LinearLayout>
+
+                <LinearLayout
+                        android:id="@+id/ll_user_login"
+                        android:orientation="vertical"
+                        android:layout_toRightOf="@+id/iv_user_img"
+                        android:layout_alignTop="@+id/iv_user_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+                    <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                        <TextView
+                                android:id="@+id/tv_user_name"
+                                android:layout_gravity="center_vertical"
+                                android:paddingTop="2dp"
+                                android:textSize="20sp"
+                                android:textColor="@android:color/white"
+                                android:text="欧阳一宿"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+                        <ImageView
+                                android:id="@+id/iv_user_vip_flag"
+                                android:layout_marginLeft="4dp"
+                                android:layout_marginRight="4dp"
+                                android:layout_gravity="center_vertical"
+                                android:src="@mipmap/ic_vip_valid"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                    </LinearLayout>
+
+                    <TextView
+                            android:id="@+id/tv_user_sign"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:textSize="14sp"
+                            android:textColor="#c2c2c2"
+                            android:text="个人签名，用户可以在设置编辑修改"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    <TextView
+                            android:id="@+id/tv_user_vip_time"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:textColor="#c2c2c2"
+                            android:text="VIP到期时间：2019.12.23"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    <TextView
+                            android:paddingLeft="12dp"
+                            android:paddingRight="12dp"
+                            android:paddingTop="5dp"
+                            android:includeFontPadding="false"
+                            android:paddingBottom="5dp"
+                            android:layout_marginTop="2dp"
+                            android:id="@+id/tv_user_vip_open"
+                            android:textColor="#07c0e9"
+                            android:text="开通VIP"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <View
+                    android:background="#4f4f4f"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"/>
+
+            <FrameLayout
+                    android:id="@+id/fl_favor"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp">
+
+                <TextView
+                        android:layout_marginLeft="16dp"
+                        android:textSize="15sp"
+                        android:textColor="#d8d8d8"
+                        android:text="我的收藏"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                <ImageView
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_gravity="end|center_vertical"
+                        android:src="@drawable/btn_next"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+            </FrameLayout>
+
+            <View
+                    android:background="#4f4f4f"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"/>
+
+            <FrameLayout
+                    android:id="@+id/fl_download"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp">
+
+                <TextView
+                        android:layout_marginLeft="16dp"
+                        android:textSize="15sp"
+                        android:textColor="#d8d8d8"
+                        android:text="我的下载"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                <ImageView
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_gravity="end|center_vertical"
+                        android:src="@drawable/btn_next"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+            </FrameLayout>
+
+            <View
+                    android:background="#4f4f4f"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"/>
+
+            <FrameLayout
+                    android:id="@+id/fl_upload"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp">
+
+                <TextView
+                        android:layout_marginLeft="16dp"
+                        android:textSize="15sp"
+                        android:textColor="#d8d8d8"
+                        android:text="我的上传"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                <ImageView
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_gravity="end|center_vertical"
+                        android:src="@drawable/btn_next"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+            </FrameLayout>
+            <View
+                    android:background="#4f4f4f"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"/>
+
+            <FrameLayout
+                    android:id="@+id/fl_make"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp">
+
+                <TextView
+                        android:layout_marginLeft="16dp"
+                        android:textSize="15sp"
+                        android:textColor="#d8d8d8"
+                        android:text="我的定制"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                <ImageView
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_gravity="end|center_vertical"
+                        android:src="@drawable/btn_next"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+            </FrameLayout>
+            <View
+                    android:background="#4f4f4f"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"/>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</com.scwang.smartrefresh.layout.SmartRefreshLayout>

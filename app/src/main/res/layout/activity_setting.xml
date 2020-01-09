@@ -101,4 +101,40 @@
         </ImageView>
     </RelativeLayout>
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:gravity="center|left"
+            android:text="意见反馈"
+            android:textColor="@color/shezhi"
+            android:textSize="16sp"></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center|left"
+            android:layout_marginLeft="90dp"
+            android:text="QQ:3607799199"
+            android:textColor="@color/shezhi">
+
+        </TextView>
+        <TextView
+            android:id="@+id/setting_advice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:text="一键复制"
+            android:textColor="@color/shezhi"></TextView>
+
+    </RelativeLayout>
 </LinearLayout>

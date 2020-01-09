@@ -78,6 +78,7 @@ dependencies {
     implementation 'com.ark.custom:envelope:1.0.1'
     implementation 'com.ark.custom:baseui:1.0.1'
     implementation 'com.ark.tools:medialoader:1.0.1'
+    implementation 'com.orhanobut:dialogplus:1.11@aar'
 
     implementation "com.ark.ads:basics:1.2.7"
     implementation "com.ark.ads:core:1.2.7"
@@ -86,6 +87,7 @@ dependencies {
     implementation "com.ark.ads:gdt:1.2.7"
     implementation "com.ark.ads:ttad:1.2.7"
     implementation "com.ark.ads:zhaocai:1.2.7"
+    implementation 'com.ark.custom:permissionutils:1.0.1@aar'
 
     implementation 'com.ark.authsdk:auth:1.0.0'
     implementation 'com.ark.authsdk:auth_alipay:1.0.0'

@@ -23,6 +23,8 @@ import android.widget.Toast;
 
 import com.adesk.polymers.common.CommonTool;
 import com.ark.dict.ConfigMapLoader;
+import com.nova.permissionutils.KvPermisson;
+import com.nova.permissionutils.PermissionUtils;
 import com.novv.dzdesk.R;
 import com.novv.dzdesk.ui.activity.ae.AEVideoShareActivity;
 import com.novv.dzdesk.ui.activity.ae.UmCount;
@@ -42,13 +44,42 @@ import static com.novv.dzdesk.ui.activity.ae.onClickButtonListener.BUTTON_TYPE_A
 
 public class MainActivity extends AppCompatActivity {
     private long exitTime = 0;
+    String[] permission = new String[]{
+            Manifest.permission.INTERNET,
+            Manifest.permission.WRITE_EXTERNAL_STORAGE,
+            Manifest.permission.SET_WALLPAPER,
+            Manifest.permission.ACCESS_NETWORK_STATE,
+            Manifest.permission.READ_EXTERNAL_STORAGE,
+            Manifest.permission.ACCESS_WIFI_STATE,
+            Manifest.permission.READ_PHONE_STATE,
+            Manifest.permission.WAKE_LOCK,
+            Manifest.permission.RECEIVE_BOOT_COMPLETED
+    };
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        int xieyi = getxieyi("showtime");
-        if (xieyi == 0) {
+        PermissionUtils.getInstance(MainActivity.this, new KvPermisson() {
+            @Override
+            public void allGranted(boolean isAllGranted) {
+
+            }
+
+            @Override
+            public void disGranted(String... disGrantedPermissions) {
+
+            }
+        }).showCheckDialog(permission);
+        int xieyi=getxieyi("showtime");
+        int yingsi=getyingsi();
+        int code=getcode("code");
+        if(xieyi==0) {
             showDialog1();
+        }
+        if(code<yingsi){
+            setcode("code",yingsi);
+            showDialog1();
+            Toast.makeText(MainActivity.this,"隐私政策已更新",Toast.LENGTH_SHORT).show();
         }
         int getversion=getVersion();
         int update=getUpdate();
@@ -67,14 +98,6 @@ public class MainActivity extends AppCompatActivity {
                 .beginTransaction()
                 .add(R.id.fragment_container,new TabAEResFragment())   // 此处的R.id.fragment_container是要盛放fragment的父容器
                 .commit();
-
-//        String packageName=packageName(MainActivity.this);
-//        String version=getVersion();
-//        int packagename=Integer.getInteger(packageName);
-//        int Version=Integer.getInteger(version);
-//        if(version.equals("null")&&Version>packagename){
-//            Toast.makeText(MainActivity.this,"更新应用",Toast.LENGTH_SHORT).show();
-//        }
 
     }
     @Override
@@ -196,13 +219,6 @@ public class MainActivity extends AppCompatActivity {
                 if (mdialog != null && mdialog.isShowing()) {
                     setxieyi("showtime",0);
                     mdialog.dismiss();
-//                    ActivityManager activityManager = (ActivityManager) MainActivity.this.getSystemService(Context.ACTIVITY_SERVICE);
-//                    List<ActivityManager.AppTask> appTaskList = activityManager.getAppTasks();
-//                    for (ActivityManager.AppTask appTask : appTaskList) {
-//                        appTask.finishAndRemoveTask();
-//                    }
-//                    android.os.Process.killProcess(android.os.Process.myPid());
-//                    System.exit(0);
                     finish();
                 }
             }
@@ -221,5 +237,23 @@ public class MainActivity extends AppCompatActivity {
         et.putInt(key, values);
         et.commit();
     }
+    public static int getyingsi() {
+        String ad_openwindow_set = ConfigMapLoader.getInstance().getResponseMap().get("private_policy_update_version");
+        if (ad_openwindow_set == null) {
+            return 104;
+        }
+        return Integer.parseInt(ad_openwindow_set);
+    }
+    public int getcode(String key) {
+        SharedPreferences sp = getSharedPreferences("code", Context.MODE_PRIVATE);
+        int str = sp.getInt(key, 104);
+        return str;
+    }
 
+    public void setcode(String key, int values) {
+        SharedPreferences sp = getSharedPreferences("code", Context.MODE_PRIVATE);
+        SharedPreferences.Editor et = sp.edit();
+        et.putInt(key, values);
+        et.commit();
+    }
 }
